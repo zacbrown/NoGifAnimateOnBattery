@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010C19A31F09BB3B00724666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FF81F01F098A08001C6F24 /* Assets.xcassets */; };
 		01FF81ED1F098A08001C6F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF81EC1F098A08001C6F24 /* AppDelegate.swift */; };
 		01FF81EF1F098A08001C6F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF81EE1F098A08001C6F24 /* ViewController.swift */; };
 		01FF81F11F098A08001C6F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FF81F01F098A08001C6F24 /* Assets.xcassets */; };
 		01FF81F41F098A08001C6F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FF81F21F098A08001C6F24 /* Main.storyboard */; };
-		01FF81FF1F098A08001C6F24 /* noanimateonbatteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF81FE1F098A08001C6F24 /* noanimateonbatteryTests.swift */; };
-		01FF820A1F098A08001C6F24 /* noanimateonbatteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF82091F098A08001C6F24 /* noanimateonbatteryUITests.swift */; };
+		01FF821E1F098A1A001C6F24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FF821D1F098A1A001C6F24 /* Cocoa.framework */; };
+		01FF822B1F098A1A001C6F24 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 01FF822A1F098A1A001C6F24 /* script.js */; };
+		01FF82301F098A1A001C6F24 /* noanimateonbatteryex.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01FF821B1F098A1A001C6F24 /* noanimateonbatteryex.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01FF82351F098ACA001C6F24 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FF82221F098A1A001C6F24 /* SafariExtensionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +33,31 @@
 			remoteGlobalIDString = 01FF81E81F098A08001C6F24;
 			remoteInfo = noanimateonbattery;
 		};
+		01FF822E1F098A1A001C6F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01FF81E11F098A08001C6F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01FF821A1F098A1A001C6F24;
+			remoteInfo = noanimateonbatteryex;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		01FF82341F098A1A001C6F24 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01FF82301F098A1A001C6F24 /* noanimateonbatteryex.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01BEA3981F09BDEB00364DFC /* noanimateonbattery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = noanimateonbattery.entitlements; sourceTree = "<group>"; };
 		01FF81E91F098A08001C6F24 /* noanimateonbattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noanimateonbattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FF81EC1F098A08001C6F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FF81EE1F098A08001C6F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,11 +65,13 @@
 		01FF81F31F098A08001C6F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01FF81F51F098A08001C6F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01FF81FA1F098A08001C6F24 /* noanimateonbatteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noanimateonbatteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01FF81FE1F098A08001C6F24 /* noanimateonbatteryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noanimateonbatteryTests.swift; sourceTree = "<group>"; };
-		01FF82001F098A08001C6F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01FF82051F098A08001C6F24 /* noanimateonbatteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noanimateonbatteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01FF82091F098A08001C6F24 /* noanimateonbatteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noanimateonbatteryUITests.swift; sourceTree = "<group>"; };
-		01FF820B1F098A08001C6F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01FF821B1F098A1A001C6F24 /* noanimateonbatteryex.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = noanimateonbatteryex.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FF821D1F098A1A001C6F24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		01FF82211F098A1A001C6F24 /* noanimateonbatteryex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = noanimateonbatteryex.entitlements; sourceTree = "<group>"; };
+		01FF82221F098A1A001C6F24 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		01FF82291F098A1A001C6F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01FF822A1F098A1A001C6F24 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01FF82181F098A1A001C6F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FF821E1F098A1A001C6F24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				01FF81EB1F098A08001C6F24 /* noanimateonbattery */,
-				01FF81FD1F098A08001C6F24 /* noanimateonbatteryTests */,
-				01FF82081F098A08001C6F24 /* noanimateonbatteryUITests */,
+				01FF821F1F098A1A001C6F24 /* noanimateonbatteryex */,
+				01FF821C1F098A1A001C6F24 /* Frameworks */,
 				01FF81EA1F098A08001C6F24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +123,7 @@
 				01FF81E91F098A08001C6F24 /* noanimateonbattery.app */,
 				01FF81FA1F098A08001C6F24 /* noanimateonbatteryTests.xctest */,
 				01FF82051F098A08001C6F24 /* noanimateonbatteryUITests.xctest */,
+				01FF821B1F098A1A001C6F24 /* noanimateonbatteryex.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +131,7 @@
 		01FF81EB1F098A08001C6F24 /* noanimateonbattery */ = {
 			isa = PBXGroup;
 			children = (
+				01BEA3981F09BDEB00364DFC /* noanimateonbattery.entitlements */,
 				01FF81EC1F098A08001C6F24 /* AppDelegate.swift */,
 				01FF81EE1F098A08001C6F24 /* ViewController.swift */,
 				01FF81F01F098A08001C6F24 /* Assets.xcassets */,
@@ -104,22 +141,31 @@
 			path = noanimateonbattery;
 			sourceTree = "<group>";
 		};
-		01FF81FD1F098A08001C6F24 /* noanimateonbatteryTests */ = {
+		01FF821C1F098A1A001C6F24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01FF81FE1F098A08001C6F24 /* noanimateonbatteryTests.swift */,
-				01FF82001F098A08001C6F24 /* Info.plist */,
+				01FF821D1F098A1A001C6F24 /* Cocoa.framework */,
 			);
-			path = noanimateonbatteryTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		01FF82081F098A08001C6F24 /* noanimateonbatteryUITests */ = {
+		01FF821F1F098A1A001C6F24 /* noanimateonbatteryex */ = {
 			isa = PBXGroup;
 			children = (
-				01FF82091F098A08001C6F24 /* noanimateonbatteryUITests.swift */,
-				01FF820B1F098A08001C6F24 /* Info.plist */,
+				01FF82221F098A1A001C6F24 /* SafariExtensionHandler.swift */,
+				01FF82291F098A1A001C6F24 /* Info.plist */,
+				01FF822A1F098A1A001C6F24 /* script.js */,
+				01FF82201F098A1A001C6F24 /* Supporting Files */,
 			);
-			path = noanimateonbatteryUITests;
+			path = noanimateonbatteryex;
+			sourceTree = "<group>";
+		};
+		01FF82201F098A1A001C6F24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01FF82211F098A1A001C6F24 /* noanimateonbatteryex.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +178,12 @@
 				01FF81E51F098A08001C6F24 /* Sources */,
 				01FF81E61F098A08001C6F24 /* Frameworks */,
 				01FF81E71F098A08001C6F24 /* Resources */,
+				01FF82341F098A1A001C6F24 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01FF822F1F098A1A001C6F24 /* PBXTargetDependency */,
 			);
 			name = noanimateonbattery;
 			productName = noanimateonbattery;
@@ -178,6 +226,23 @@
 			productReference = 01FF82051F098A08001C6F24 /* noanimateonbatteryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		01FF821A1F098A1A001C6F24 /* noanimateonbatteryex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01FF82311F098A1A001C6F24 /* Build configuration list for PBXNativeTarget "noanimateonbatteryex" */;
+			buildPhases = (
+				01FF82171F098A1A001C6F24 /* Sources */,
+				01FF82181F098A1A001C6F24 /* Frameworks */,
+				01FF82191F098A1A001C6F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = noanimateonbatteryex;
+			productName = noanimateonbatteryex;
+			productReference = 01FF821B1F098A1A001C6F24 /* noanimateonbatteryex.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,7 +255,13 @@
 				TargetAttributes = {
 					01FF81E81F098A08001C6F24 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JY6F62A7GR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					01FF81F91F098A08001C6F24 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -202,9 +273,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 01FF81E81F098A08001C6F24;
 					};
+					01FF821A1F098A1A001C6F24 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JY6F62A7GR;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = 01FF81E41F098A08001C6F24 /* Build configuration list for PBXProject "noanimateonbattery" */;
+			buildConfigurationList = 01FF81E41F098A08001C6F24 /* Build configuration list for PBXProject "NoAnimateGifOnBatteryExtension" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,6 +296,7 @@
 				01FF81E81F098A08001C6F24 /* noanimateonbattery */,
 				01FF81F91F098A08001C6F24 /* noanimateonbatteryTests */,
 				01FF82041F098A08001C6F24 /* noanimateonbatteryUITests */,
+				01FF821A1F098A1A001C6F24 /* noanimateonbatteryex */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +325,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01FF82191F098A1A001C6F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010C19A31F09BB3B00724666 /* Assets.xcassets in Resources */,
+				01FF822B1F098A1A001C6F24 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,7 +350,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FF81FF1F098A08001C6F24 /* noanimateonbatteryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FF820A1F098A08001C6F24 /* noanimateonbatteryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01FF82171F098A1A001C6F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FF82351F098ACA001C6F24 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = 01FF81E81F098A08001C6F24 /* noanimateonbattery */;
 			targetProxy = 01FF82061F098A08001C6F24 /* PBXContainerItemProxy */;
+		};
+		01FF822F1F098A1A001C6F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01FF821A1F098A1A001C6F24 /* noanimateonbatteryex */;
+			targetProxy = 01FF822E1F098A1A001C6F24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,12 +495,17 @@
 		01FF820F1F098A08001C6F24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = noanimateonbattery/noanimateonbattery.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JY6F62A7GR;
 				INFOPLIST_FILE = noanimateonbattery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taters.noanimateonbattery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NoGifAnimateOnBattery.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -411,12 +513,17 @@
 		01FF82101F098A08001C6F24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = noanimateonbattery/noanimateonbattery.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JY6F62A7GR;
 				INFOPLIST_FILE = noanimateonbattery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taters.noanimateonbattery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NoGifAnimateOnBattery.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -479,10 +586,49 @@
 			};
 			name = Release;
 		};
+		01FF82321F098A1A001C6F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = noanimateonbatteryex/noanimateonbatteryex.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = JY6F62A7GR;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = noanimateonbatteryex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NoGifAnimateOnBattery.Extension.Safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		01FF82331F098A1A001C6F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = noanimateonbatteryex/noanimateonbatteryex.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = JY6F62A7GR;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = noanimateonbatteryex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NoGifAnimateOnBattery.Extension.Safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01FF81E41F098A08001C6F24 /* Build configuration list for PBXProject "noanimateonbattery" */ = {
+		01FF81E41F098A08001C6F24 /* Build configuration list for PBXProject "NoAnimateGifOnBatteryExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01FF820C1F098A08001C6F24 /* Debug */,
@@ -498,6 +644,7 @@
 				01FF82101F098A08001C6F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01FF82111F098A08001C6F24 /* Build configuration list for PBXNativeTarget "noanimateonbatteryTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +653,7 @@
 				01FF82131F098A08001C6F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01FF82141F098A08001C6F24 /* Build configuration list for PBXNativeTarget "noanimateonbatteryUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +662,16 @@
 				01FF82161F098A08001C6F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01FF82311F098A1A001C6F24 /* Build configuration list for PBXNativeTarget "noanimateonbatteryex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FF82321F098A1A001C6F24 /* Debug */,
+				01FF82331F098A1A001C6F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
